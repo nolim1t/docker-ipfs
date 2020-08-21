@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-	ipfs:
-		image:  lncm/ipfs:v0.4.22
-		container_name: ipfs
-		network_mode: host
-		restart: on-failure
-		volumes:
-			- "$PWD/ipfs-data:/data/.ipfs"
-			- "$PWD/ipfs-files:/ipfs-files"
+    ipfs:
+        image:  lncm/ipfs:v0.4.22
+        container_name: ipfs
+        network_mode: host
+        restart: on-failure
+        volumes:
+            - "$PWD/ipfs-data:/data/.ipfs"
+            - "$PWD/ipfs-files:/ipfs-files"
